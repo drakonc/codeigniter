@@ -23,7 +23,11 @@
                     <td scope="row"><?=$libro['id'] ?></td>
                     <td><?=$libro['imagen'] ?></td>
                     <td><?=$libro['nombre'] ?></td>
-                    <td>Editar/Borrar</td>
+                    <td>
+                        <a class="btn btn-primary" type="button">Editar</a>
+                        /
+                        <a href="<?=base_url('borrar-libro/'.$libro['id']);?>" class="btn btn-danger" type="button">Eliminar</a>
+                    </td>
                 </tr>
             <?php endforeach; ?>
         </tbody>

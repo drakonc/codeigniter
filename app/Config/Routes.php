@@ -53,4 +53,6 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
 $routes->get('/holamundo','Holamundo::index');
 $routes->get('/listar','Libros::index');
 $routes->get('/crear-libro','Libros::crear_libro');
+$routes->post('/guarar-libro','Libros::guardar_libro');
+$routes->get('/borrar-libro/(:num)','Libros::borrar_libro/$1');
 
